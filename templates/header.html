@@ -13,8 +13,9 @@
             Library Management System
         </div>
         <div class="nav-bar">
-            <a class="register-book" href="/book_entry" target="">Register a book</a>
-            <a class="remove-book" href="/book_remove" target="">Remove a book</a>
+            <a class="register-book" href="{{ url_for('bookentry')}}" target="">Register a book</a>
+            <a class="remove-book" href="{{url_for('bookremove')}}" target="">Remove a book</a>
+            <a class="show-all-book" href="{{url_for('show_all_book')}}" target="">Show all books</a>
         </div>
     </div>
 </header>
